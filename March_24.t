@@ -12,7 +12,7 @@ loop
     put word(*)   
 end loop
 
-put "Question #2 Lesson 24"
+put "Question #2 Lesson 24 Method #1"
 var my_array : array 1 .. 11 of string
 var temp : string
 my_array(11):=""
@@ -28,6 +28,18 @@ for i : 1.. 10
     end if
 end for
 put "The longest word is ", my_array(11)
+
+put "Question #2 Lesson 24 Method #2"
+var word : string
+var longest_word : string := ""
+for i : 1 .. 10
+   put "Please enter a word: " ..
+   get word
+   if length(word) > length(longest_word) then
+       longest_word := word
+   end if
+end for
+put "The longest word you entered is ", longest_word, "."
 
 put "Question #3 Lesson 24"
 var words : string
