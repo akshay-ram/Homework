@@ -156,7 +156,7 @@ for i : 1 .. length (word10)
 end for
 put new_word10
 
-put "Question #11 Assignment 6" % I did not account for capital letters
+put "Question #11 Assignment 6"
 var word11 : string
 var new_word11 : string := ""
 var number11 : int
@@ -172,7 +172,7 @@ for i : 1 .. length (word11)
 end for
 put new_word11
 
-put "Question #12 Assignment 6" % I did not account for capital letters
+put "Question #12 Assignment 6"
 var word12 : string
 var new_word12 : string := ""
 var number12 : int
@@ -187,4 +187,80 @@ for i : 1 .. length (word12)
     end if
 end for
 put new_word12
-   
+
+put "Question #13 Assignment 6"
+var word13 : string
+var number13 : int
+var half1 : string := ""
+put "Please enter a word. " ..
+get word13
+half1 := (word13 (1 .. length (word13) div 2))
+for i : 1 .. length (half1)
+    number13 := ord (half1 (i)) - ord ("a") + ord ("A")
+    put chr (number13) ..
+end for
+put (word13 (length (word13) div 2 + 1 .. *))
+put ""
+
+put "Question #14 Assignment 6"
+var word14 : string
+var number14 : int
+var half14 : string := ""
+var half24 : string := ""
+put "Please enter a word. " ..
+get word14
+put word14 (1 .. length (word14) div 2) ..
+half24 := (word14 (length (word14) div 2 + 1 .. *))
+for i : 1 .. length (half24)
+    number14 := ord (half24 (i)) - ord ("a") + ord ("A")
+    put chr (number14) ..
+end for
+put ""
+
+put "Question #15 Assignment 6"
+var word15 : string
+put "What is the word? " ..
+get word15
+for i : 1 .. length (word15)
+    put word15 (i) ..
+    put " " ..
+end for
+put ""
+
+put "Question #16 Assignment 6"
+var word16 : string
+put "What is the word? " ..
+get word16
+for i : 1 .. length (word16)
+    put word16 (i) : 1 + i ..
+end for
+put ""
+
+put "Question #17 Assignment 6"
+var word17 : string
+put "What is the word? " ..
+get word17
+for i : 1 .. length (word17)
+    put word17 (i) : length (word17) + 1 - i ..
+end for
+put ""
+
+put "Question #18 Assignment 6"
+var word18 : string
+put "What is the word? " ..
+get word18
+for i : 1 .. 40 - length (word17) div 2
+    put " " ..
+end for
+put word18
+
+put "Question #19 Assignment 6"
+var word19 : string
+put "What is the word? " ..
+get word19
+for i : 1 .. 40 - length (word19) div 2
+    put " " ..
+end for
+for i : 1..length(word19)
+    put word19(i), " "..
+end for
