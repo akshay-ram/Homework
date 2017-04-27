@@ -8,6 +8,8 @@ var xcoords3 : array 1 .. 4 of int
 var ycoords3 : array 1 .. 4 of int
 var xcoords4 : array 1 .. 4 of int
 var ycoords4 : array 1 .. 4 of int
+var xcoords5 : array 1 .. 4 of int
+var ycoords5 : array 1 .. 4 of int
 
 %triangle part of house
 xcoords1 (1) := 100
@@ -140,5 +142,16 @@ drawarc (490, 330, 13, 13, 105, 275, black)
 drawfill (480, 325, 47, black)
 
 %door 2
+xcoords5 (1) := 280
+xcoords5 (2) := 271
+xcoords5 (3) := 280
+xcoords5 (4) := 288
+ycoords5 (1) := 250
+ycoords5 (2) := 257
+ycoords5 (3) := 260
+ycoords5 (4) := 253 
 
+drawfillpolygon (xcoords5, ycoords5, 4, 64)
+drawpolygon (xcoords5, ycoords5, 4, black)
 
+drawdot (281, 256, black)
