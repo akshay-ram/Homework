@@ -11,6 +11,10 @@ var ycoords4 : array 1 .. 4 of int
 var xcoords5 : array 1 .. 4 of int
 var ycoords5 : array 1 .. 4 of int
 
+%black frame
+drawline (0, maxy, maxx, maxy, black)
+drawline (maxx, maxy, maxx, 0, black)
+
 %triangle part of house
 xcoords1 (1) := 100
 xcoords1 (2) := 250
@@ -94,6 +98,25 @@ drawfillpolygon (xcoords2, ycoords2, 4, 119)
 %sky
 drawfill (400, 300, 100, black)
 
+%rainbow
+drawline (300, maxy, 446, maxy-25, black)
+drawline (270, maxy, 433, maxy-30, black)
+drawline (240, maxy, 423, maxy-37, black)
+drawline (210, maxy, 418, maxy-45, black)
+drawline (180, maxy, 415, maxy-53, black)
+drawline (150, maxy, 412, maxy-62, black)
+drawline (120, maxy, 410, maxy-72, black)
+drawline (90, maxy, 411, maxy-82, black) 
+
+drawarc (450, 320, 40, 55, 270, 190, black)
+
+drawfill (300, maxy-5, 12, black)
+drawfill (270, maxy-2, 42, black)
+drawfill (240, maxy-2, 14, black)
+drawfill (210, maxy-2, 47, black)
+drawfill (180, maxy-2, 9, black)
+drawfill (150, maxy-2, 105, black)
+drawfill (120, maxy-2, 107, black) 
 %hand
 xcoords4 (1) := 250
 xcoords4 (2) := 310
